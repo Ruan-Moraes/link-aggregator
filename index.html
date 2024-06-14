@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/main.mjs" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Link Aggregators | Ruan Moraes</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Nunito Sans', sans-serif;
+      }
+
+      html,
+      body {
+        height: 100vh;
+        width: 100vw;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .gradient--background {
+        background: linear-gradient(
+          to bottom right,
+          #121212,
+          #2d2e31,
+          #25262a,
+          #ffbe2e,
+          #ff5f5a,
+          #25262a,
+          #2d2e31,
+          #121212
+        );
+        background-size: 1500% 3000%;
+        animation: changeGradient 120s ease infinite;
+      }
+
+      @keyframes changeGradient {
+        0% {
+          background-position: 0% 0%;
+        }
+
+        50% {
+          background-position: 100% 100%;
+        }
+
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      i {
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body class="flex flex-col gap-4 gradient--background tracking-widest">
+    <main>
+      <div class="container__content">
+        <div>
+          <div class="relative center">
+            <img
+              src="https://media.licdn.com/dms/image/D4D03AQG5os3r94790w/profile-displayphoto-shrink_800_800/0/1709173919691?e=1723680000&v=beta&t=y0PWitQcx5dNEDpFNRUYIktpwrmPwHR-LythpEcp_Nw"
+              alt="Ruan Moraes"
+              class="img"
+            />
+          </div>
+        </div>
+        <div class="mt-36 center--column gap-4">
+          <div class="text-center">
+            <h1 class="text-white font-bold text-4xl">Ruan Moraes</h1>
+            <p class="text-ff5f5a font-bold">
+              Desenvolvedor Full-Stack e Mobile
+            </p>
+          </div>
+          <div class="w-full">
+            <div class="flex gap-4">
+              <div class="button">
+                <a href="#"> Meu Portfólio </a>
+              </div>
+              <div class="button">
+                <a href="#"> Linkedin </a>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="flex flex-col gap-4 w-full">
+            <div class="button--full">
+              <i class="fa-solid fa-code"></i>
+              <a href="#"> Meus Serviços </a>
+            </div>
+            <div class="button--full">
+              <i class="fa-solid fa-phone"></i>
+              <a href="#"> Telefone </a>
+            </div>
+            <div class="button--full">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="#"> E-mail </a>
+            </div>
+            <div class="button--full">
+              <i class="fa-brands fa-square-github"></i>
+              <a href="#"> GitHub </a>
+            </div>
+            <div class="button--full">
+              <i class="fa-solid fa-dumbbell"></i>
+              <a href="#"> Code Wars </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container__footer">
+        <p class="text-center text-white">
+          &copy; 2024 - Ruan Moraes - Todos os direitos reservados
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
