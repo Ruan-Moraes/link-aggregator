@@ -1,9 +1,9 @@
 {
   "name": "link-aggregators",
   "version": "1.0.0",
-  "main": "tailwind.config.js",
+  "main": "index.js",
   "scripts": {
-    "build": "tailwindcss build ./tailwind.css -o ./assets/css/styles.css  --watch"
+    "build": "npx tailwindcss -i ./tailwind.css -o ./assets/css/styles.css --watch"
   },
   "keywords": [],
   "author": "",
