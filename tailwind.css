@@ -8,7 +8,7 @@
   }
 
   .body {
-    @apply flex flex-col items-center justify-center gap-4 tracking-widest bg-121212 sm:bg-2d2e31;
+    @apply flex flex-col items-center justify-center gap-4 tracking-widest bg-121212;
   }
 
   .main {
@@ -19,8 +19,12 @@
     @apply absolute top-0 bottom-0 left-0 right-0 min-h-screen overflow-hidden pointer-events-none min-w-screen -z-10;
   }
 
+  .ball {
+    @apply absolute rounded-full;
+  }
+
   .container__content {
-    @apply flex flex-col gap-4 sm:px-8 sm:pb-8 sm:bg-121212 sm:border-2 sm:rounded-md sm:shadow-2xl;
+    @apply flex flex-col gap-4 sm:px-8 sm:pb-8 sm:bg-121212 sm:border-2 sm:border-gray-400 sm:rounded-md sm:shadow-2xl;
   }
 
   .container__img {
@@ -47,6 +51,10 @@
 
   .button--full {
     @apply flex items-center justify-center w-full gap-2 h-14;
+  }
+
+  i {
+    @apply text-2xl;
   }
 
   .divider {
